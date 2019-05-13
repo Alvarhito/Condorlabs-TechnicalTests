@@ -11,18 +11,12 @@ import NavigationBar from './Components/NavigationBar';
 
 class AppNavigator extends Component  {
     render (){
+        //This work as a general navigator
+        //Here, we call el nav bar component and we configure the screen of each button of navBar.
       return(
         <Router>
             <div>
                 <NavigationBar/>
-                {/*<div className="App-header">
-                    <h5 className="App-link"><Link className="App-link" to="/">Home</Link></h5>
-                    <h5 className="App-link"><Link className="App-link" to="/team">Our team</Link></h5>
-                    <h5 className="App-link"><Link className="App-link" to="/about">About us</Link></h5>
-                    <h5 className="App-link"><Link className="App-link" to="/work">Our work</Link></h5>
-                    <h5 className="App-link"><Link className="App-link" to="/Contact">Contact us</Link></h5>
-                </div>*/}
-
                 <Route exact path="/" component={Home} />
                 <Route exact path="/About" component={About} />
                 <Route exact path="/team" component={Team} />

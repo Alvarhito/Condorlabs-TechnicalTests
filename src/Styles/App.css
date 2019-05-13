@@ -6,7 +6,8 @@
   transform: rotate(-45deg);
   min-width:150%;
   min-height:150%;
-  margin: -2em;
+  margin-top: -2em;
+  margin-left: -1.4em;
 }
 .App-containerImage{
   width: calc(80px + 5vmin);
@@ -14,11 +15,12 @@
 
   overflow: hidden;
 
+  /*background-color: aqua;*/
   transform: rotate(45deg);
   border-radius: 4%;
 
-  margin-right: 7vmin ;
-  margin-top: 7vmin ;
+  margin-right: 45px;
+  margin-top: 50px;
 
 }
 
@@ -29,14 +31,27 @@
 }
 
 .App-imageList{
+  /*margin-top: 50px;*/
   display: flex;
   align-items:center;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: stretch;
-  margin-right: 20%;
-  margin-left: 20%
+  margin-right:20%;
+  margin-left: 20%;
+}
+.App-imageList2{
+  margin-top: 65px;
+  position: absolute;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  margin-right: 18%;
+  margin-left: 18%;
 }
 
 .App-body {

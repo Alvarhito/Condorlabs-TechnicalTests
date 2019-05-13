@@ -1,10 +1,9 @@
 import React,{Component} from 'react';
-//import logo from './logo.svg';
-//import './App.css';
 import AppNavigator from './AppNavigator';
 
 class App extends Component {
   render (){
+    //Hero only call to Navigator
     return(
       <AppNavigator/>
     );
