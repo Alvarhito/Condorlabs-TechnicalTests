@@ -2,6 +2,30 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Autor
 ### `Álvaro José Ortega Vargas`
 
+## Web page
+
+This is a web page that use the instagram API to show all images of publications of specific account.
+
+## Technologies used
+React Js        : JavaScript library.
+react-router-dom: Library to handle navigation behavior and routes
+Bulma.io        : CSS framework.
+Instagram API   : To get images.
+
+## How to use?
+Clone the git repository
+### `git clone https://github.com/Alvarhito/Condorlabs-TechnicalTests`
+
+Go to the repository directory, and run this command
+### `npm install`
+
+Install react-router-dom
+### `npm install react-router-dom`
+
+Install Bulma.io
+### `npm install bulma`
+
+
 ## Available Scripts
 
 In the project directory, you can run:
