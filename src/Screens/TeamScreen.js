@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import '../Styles/App.css';
 
 //Token associated with instagram account
-const token='1821160367.1677ed0.1fef08ca4eda4420b9a78cba01a04a57';
+const token=process.env.REACT_APP_API_TOKEN;
 
 class Team extends Component  {
     static navigationOptions = { 
@@ -16,6 +16,7 @@ class Team extends Component  {
       };
       
       //This fuction is to obtain the information of API and it is async
+
       this.getData();
     }
 
@@ -27,7 +28,6 @@ class Team extends Component  {
           let responseJson = await response.json();
           //when I get the information i change the state of the 'data' variable
           thisAux.setState({data:responseJson});
-          console.log(thisAux.state.data);
         } catch (error) {
           console.log(error);
         }
@@ -51,8 +51,13 @@ class Team extends Component  {
           <h1 className="title is-1 color" >Our Team</h1>
           <h2 className="subtitle">Our team always at your service</h2>
           
-          <div className="App-imageList">
+          {/*<div className="App-imageList2">
             {this.state.data===undefined?<div className="button is-loading"></div>:this.renderImages()}
+            {this.state.data===undefined?<div className="button is-loading"></div>:this.renderImages()}
+          </div>*/}
+
+          <div className="App-imageList">
+            {this.state.data===undefined?<div className="button is-loading"></div>:this.renderImages()}            
           </div>
           
         </div>
